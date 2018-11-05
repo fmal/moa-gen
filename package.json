@@ -52,6 +52,11 @@
     ]
   },
   "now": {
+    "public": true,
+    "alias": "moa-gen",
+    "files": [
+      "src"
+    ],
     "env": {
       "NODE_ENV": "production"
     }

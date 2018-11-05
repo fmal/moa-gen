@@ -17,7 +17,7 @@ describe('generateSVG', () => {
     });
 
     expect(customizedMarkup.includes('width="500"')).toBeTruthy();
-    expect(customizedMarkup.includes('height="667"')).toBeTruthy();
+    expect(customizedMarkup.includes('height="375"')).toBeTruthy();
     expect(customizedMarkup).toMatchSnapshot();
   });
 });
