@@ -16,6 +16,17 @@ const parseSize = size => {
   return 600;
 };
 
+const calculateFontSize = (text, baseFontSize = 52, maxChars = 16) => {
+  const numChars = String(text).length;
+  const scaleFactor = Math.max(maxChars / numChars, 0.6);
+
+  if (scaleFactor < 1) {
+    return Math.floor(scaleFactor * baseFontSize);
+  }
+
+  return baseFontSize;
+};
+
 module.exports = function generateSVG({
   size,
   name = 'Approval',
@@ -37,8 +48,10 @@ module.exports = function generateSVG({
     <circle cx="930" cy="690" r="10"/>
   </g>
   <path d="M50 0h840a50 50 0 0 0 50 50v600a50 50 0 0 0-50 50H50a50 50 0 0 0-50-50V50A50 50 0 0 0 50 0z" fill="url(#texture)" stroke="#9c92ac" stroke-width="8" transform="translate(10 10)"/>
-  <text fill="#3d3847" font-family="monospace" font-size="52" text-anchor="middle" word-spacing="-10" x="50%" y="178">
-    Certificate <tspan font-family="Georgia, serif" font-size="40" font-style="italic">of</tspan> ${name}
+  <text fill="#3d3847" font-family="monospace" font-size="${calculateFontSize(
+    name
+  )}" text-anchor="middle" word-spacing="-10" x="50%" y="178">
+    Certificate <tspan font-family="Georgia, serif" font-size="0.769em" font-style="italic">of</tspan> ${name}
   </text>
   <text fill="#3d3847" font-family="monospace" text-anchor="middle" x="50%" y="266">
     <tspan font-size="32">AWARDED TO</tspan><tspan dy="84" font-size="48" font-weight="bold" x="50%">${receiver}</tspan>

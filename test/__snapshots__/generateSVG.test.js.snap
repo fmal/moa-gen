@@ -14,7 +14,7 @@ exports[`generateSVG generates default SVG markup 1`] = `
   </g>
   <path d=\\"M50 0h840a50 50 0 0 0 50 50v600a50 50 0 0 0-50 50H50a50 50 0 0 0-50-50V50A50 50 0 0 0 50 0z\\" fill=\\"url(#texture)\\" stroke=\\"#9c92ac\\" stroke-width=\\"8\\" transform=\\"translate(10 10)\\"/>
   <text fill=\\"#3d3847\\" font-family=\\"monospace\\" font-size=\\"52\\" text-anchor=\\"middle\\" word-spacing=\\"-10\\" x=\\"50%\\" y=\\"178\\">
-    Certificate <tspan font-family=\\"Georgia, serif\\" font-size=\\"40\\" font-style=\\"italic\\">of</tspan> Approval
+    Certificate <tspan font-family=\\"Georgia, serif\\" font-size=\\"0.769em\\" font-style=\\"italic\\">of</tspan> Approval
   </text>
   <text fill=\\"#3d3847\\" font-family=\\"monospace\\" text-anchor=\\"middle\\" x=\\"50%\\" y=\\"266\\">
     <tspan font-size=\\"32\\">AWARDED TO</tspan><tspan dy=\\"84\\" font-size=\\"48\\" font-weight=\\"bold\\" x=\\"50%\\">Unknown</tspan>
@@ -39,7 +39,7 @@ exports[`generateSVG handles custom parameters 1`] = `
   </g>
   <path d=\\"M50 0h840a50 50 0 0 0 50 50v600a50 50 0 0 0-50 50H50a50 50 0 0 0-50-50V50A50 50 0 0 0 50 0z\\" fill=\\"url(#texture)\\" stroke=\\"#9c92ac\\" stroke-width=\\"8\\" transform=\\"translate(10 10)\\"/>
   <text fill=\\"#3d3847\\" font-family=\\"monospace\\" font-size=\\"52\\" text-anchor=\\"middle\\" word-spacing=\\"-10\\" x=\\"50%\\" y=\\"178\\">
-    Certificate <tspan font-family=\\"Georgia, serif\\" font-size=\\"40\\" font-style=\\"italic\\">of</tspan> excellence
+    Certificate <tspan font-family=\\"Georgia, serif\\" font-size=\\"0.769em\\" font-style=\\"italic\\">of</tspan> excellence
   </text>
   <text fill=\\"#3d3847\\" font-family=\\"monospace\\" text-anchor=\\"middle\\" x=\\"50%\\" y=\\"266\\">
     <tspan font-size=\\"32\\">AWARDED TO</tspan><tspan dy=\\"84\\" font-size=\\"48\\" font-weight=\\"bold\\" x=\\"50%\\">test</tspan>
